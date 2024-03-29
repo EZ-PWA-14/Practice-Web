@@ -5,9 +5,9 @@
 /* Gothic A1 google font */
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 
-* {
+/* * {
   outline: 2px solid darkblue;
-}
+} */
 
 /* or :root { */
 html {
@@ -16,12 +16,15 @@ html {
   font-style: normal;
 }
 
-/* body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
+body {
+  background-color: bisque;
+}
 
+body > h1 {
+  text-align: center;
+}
+
+/* inner style set up */
 .inner {
   width: 1200px;
   display: flex;
@@ -31,19 +34,66 @@ html {
   margin: 0 auto;
 }
 
+/* footer style set up */
+.footer {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #da6b2b;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 
-.toss:link {
+.footer:hover {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #4f19e2;
+}
+
+.footer > a:link {
+  color: #000000;
+}
+
+.footer > a:hover {
+  color: #6b6b6b;
+}
+
+.footer > a:active {
+  color: #dd8888;
+}
+
+.footer > a:visited {
+  color: #4b5d79;
+}
+
+
+.boxLink {
+  margin: 0 auto;
+}
+
+.boxLink > div > img {
+  width: 10%;
+}
+
+.boxLink > div > img:hover {
+  width: 50%;
+}
+
+/* apple link text styling */
+.apple:link {
   color: pink;
 }
 
-.toss:hover {
+.apple:hover {
   color: rgb(255, 142, 161);
 }
 
-.toss:active {
+.apple:active {
   color: rgb(255, 121, 143);
 }
 
-.toss:visited {
+.apple:visited {
   color: cornflowerblue;
 }
