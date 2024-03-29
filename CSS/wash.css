@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* 빨래빙 PC views */
+
+/* Gothic A1 google font */
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
+* {
+  outline: 2px solid darkblue;
+}
+
+/* or :root { */
+html {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.inner {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin: 0 auto;
+}
+
+
+.toss:link {
+  color: pink;
+}
+
+.toss:hover {
+  color: rgb(255, 142, 161);
+}
+
+.toss:active {
+  color: rgb(255, 121, 143);
+}
+
+.toss:visited {
+  color: cornflowerblue;
+}
