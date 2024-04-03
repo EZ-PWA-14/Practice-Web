@@ -10,11 +10,25 @@ ol, ul {
 
 ul {
   list-style-type: '✨';
+  padding: 40px;
+}
+
+ul.pseudo-element {
+  list-style: none;
+  margin: 0;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul.pseudo-element li {
+  position: relative;
+
 }
 
 ul > li::marker {
   display: block;
+  font-size: 2rem;
 }
 
 li {
