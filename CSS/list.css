@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+body {
+  margin: 0 0 0 0;
+}
+
+ol, ul {
+  list-style: lower-roman;
+}
+
+ul {
+  list-style-type: '✨';
+  padding: 20px;
+}
+
+ul > li::marker {
+  display: block;
+}
+
+li {
+  padding: 5px;
+}
