@@ -1,99 +1,75 @@
 @charset "utf-8";
 
-/* 빨래빙 PC views */
-
-/* Gothic A1 google font */
+/* 빨래방 pc */
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+/* Gothic A1 구글폰트 */
 
-/* * {
-  outline: 2px solid darkblue;
-} */
-
-/* or :root { */
-html {
+/* css 초기화 하는 방식 2가지 */
+* {
+  /* outline: 1px solid darkblue; */
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
+html, p, ul, ol, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+:root {
   font-family: "Gothic A1", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-body {
-  background-color: bisque;
-}
-
-body > h1 {
+h1 {
+  font-size: 70px;
   text-align: center;
+  margin: 20px 0 50px;
 }
+/* 바디를 기준으로 레이아웃 가운데정렬 */
+/* body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 
-/* inner style set up */
 .inner {
   width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 60px;
+
+  /* 스스로 레이아웃 가운데정렬 */
   margin: 0 auto;
 }
-
-/* footer style set up */
-.footer {
+section {
+  height: 325px;
   display: flex;
-  width: 100px;
-  height: 100px;
-  border: 1px solid #da6b2b;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  gap: 70px;
 }
-
-.footer:hover {
-  display: flex;
-  width: 150px;
-  height: 150px;
-  border: 1px solid #4f19e2;
+/* 자식의 순서를 바꿀 수 있는 속성 order, self형식으로 선언
+기본 html의 나열이 최우선 순위, 그 이후로 선언된 order속성에
+따라 순서를 변경시킬 수 있다.  */
+section:nth-of-type(2) .txtBox {
+  order: 1;
 }
-
-.footer > a:link {
-  color: #000000;
+section:nth-of-type(2) img {
+  order: 2;
 }
-
-.footer > a:hover {
-  color: #6b6b6b;
+.txtBox h2 {
+  color: #00B9D2;
+  font-weight: 600;
+  font-size: 18px;
 }
-
-.footer > a:active {
-  color: #dd8888;
+.txtBox h3 {
+  padding: 10px 0 45px;
+  /* margin: 10px 0 45px; */
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
 }
-
-.footer > a:visited {
-  color: #4b5d79;
-}
-
-
-.boxLink {
-  margin: 0 auto;
-}
-
-.boxLink > div > img {
-  width: 10%;
-}
-
-.boxLink > div > img:hover {
-  width: 50%;
-}
-
-/* apple link text styling */
-.apple:link {
-  color: pink;
-}
-
-.apple:hover {
-  color: rgb(255, 142, 161);
-}
-
-.apple:active {
-  color: rgb(255, 121, 143);
-}
-
-.apple:visited {
-  color: cornflowerblue;
+.txtBox p {
+  line-height: 1.7;
+  color: #353535;
 }
