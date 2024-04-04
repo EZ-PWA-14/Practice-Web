@@ -5,118 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>체린의 소개 페이지</title>
-    <link rel="stylesheet" href="./CSS/main.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/study1.css" type="text/css">
     <!-- requested file location to add -->
 </head>
 
 <body>
-    <!-- 텍스트 크기와 볼드 (제목, 부제목같은거) 지정하는 태그 -->
-    <h1>
-        서문
-    </h1>
-
-    <h2>
-        HTML이란?
-    </h2>
-
-    <!-- 영역 지정하는 태그 -->
     <div>
-        안녕하세용
+        <!-- 텍스트 크기와 볼드 (제목, 부제목같은거) 지정하는 태그 -->
+        <h1>
+            서문
+        </h1>
+
+        <h2>
+            HTML이란?
+        </h2>
+
+        <!-- 영역 지정하는 태그 -->
+        <div>
+            안녕하세용
+        </div>
+
+        <!-- 줄바꿈을 해주는 태그 -->
+        안<br />녕
+
+        <!-- 단락을 만드는 태그 -->
+        <p>
+            <!-- 하이퍼 링크를 지정하는 링크 -->
+            <a href="https://www.naver.com">
+                여기룰 누르세요
+            </a>
+        </p>
+
+        <!-- 이미지를 띄우는 태그 -->
+        <img src="../Picture/Studies/image.jpg" alt />
+
+        <!-- 점박이 리스트업을 해주는 태그 -->
+        <ul>
+            <li> 치킨 </li>
+            <li> 맥주 </li>
+            <li> 피자 </li>
+        </ul>
+
+        <!-- 숫자 리스트업을 해주는 태그 -->
+        <ol>
+            <li> 망고 </li>
+            <li> 체리 </li>
+            <li> 수박 </li>
+        </ol>
+
+        <form>
+            <!-- 텍스트 필드를 만들어주는 태그 -->
+            <input type="text" placeholder="이곳에 입력하세요" />
+
+            <!-- 체크박스를 만들어주는 태그 -->
+            <input type="checkbox" /> chackbox <br />
+
+            <!-- 색상을 고를 수 있는 태그 -->
+            <input type="color" /> pick-up color <br />
+
+            <!-- 날짜를 선택하게 해주는 태그 -->
+            <input type="date" /> pick-up plan <br />
+
+            <!-- 파일을 업로드하게 해주는 태그 -->
+            <input type="file" /> file upload <br />
+
+            <!-- 비밀번호를 입력하게 해주는 태그 -->
+            <input type="password" /> type password <br />
+
+            <!-- 동의 버튼 같은 버튼 만들어주는 태그 -->
+            <input type="radio" name="type" /> radio button1 <br />
+            <input type="radio" name="type" /> radio button2 <br />
+
+            <!-- 슬라이드 바 만들어주는 태그 -->
+            <input type="range" /> side bar
+        </form>
+
+        <br />
+        <br />
+
+        <!-- 초콜릿 테이블 ( 구룹 같은 거 ), td는 표의 해, tr은 표의 열암 -->
+        <table border="1">
+            <tr>
+                <td>section1</td>
+                <td>section2</td>
+            </tr>
+            <tr>
+                <td>section3</td>
+                <td>section4</td>
+            </tr>
+        </table>
+
+        <!-- 선택창을 만들어주는 태그 -->
+        <select name="" id="">
+            <option>choose your job</option>
+            <option>finder</option>
+            <option>magician</option>
+            <option>warrior</option>
+            <option>none</option>
+        </select>
+
+        <i>기울임</i>
+        <b>굵음</b>
+        <u>밑줄</u>
+        <s>취소선</s>
+        <small>삭제</small>
+
+        <!-- 주석 >> 하는 방법은 ctrl / or cmd / -->
+
+        <!-- 루비 태그 -->
+        <ruby>
+            안녕<rp>(</rp>
+            <rt>hello</rt>
+            <rp>)</rp>
+        </ruby>
+
+        <br />
+
+        <button>hello!</button>
     </div>
-    
-    <!-- 줄바꿈을 해주는 태그 -->
-    안<br/>녕
-
-    <!-- 단락을 만드는 태그 -->
-    <p>
-        <!-- 하이퍼 링크를 지정하는 링크 -->
-        <a href="https://www.naver.com">
-            여기룰 누르세요
-        </a>
-    </p>
-
-    <!-- 이미지를 띄우는 태그 -->
-    <img height = "500", src = "https://i.pinimg.com/564x/ec/ae/f3/ecaef39333140adddace268056f46931.jpg"/>
-
-    <!-- 점박이 리스트업을 해주는 태그 -->
-    <ul>
-        <li> 치킨 </li>
-        <li> 맥주 </li>
-        <li> 피자 </li>
-    </ul>
-
-    <!-- 숫자 리스트업을 해주는 태그 -->
-    <ol>
-        <li> 망고 </li>
-        <li> 체리 </li>
-        <li> 수박 </li>
-    </ol>
-
-    <!-- 텍스트 필드를 만들어주는 태그 -->
-    <input type = "text", placeholder = "이곳에 입력하세요"/>
-
-    <!-- 체크박스를 만들어주는 태그 -->
-    <input type = "checkbox"/> chackbox <br/>
-
-    <!-- 색상을 고를 수 있는 태그 -->
-    <input type = "color"/> pick-up color <br/>
-
-    <!-- 날짜를 선택하게 해주는 태그 -->
-    <input type = "date"/> pick-up plan <br/>
-
-    <!-- 파일을 업로드하게 해주는 태그 -->
-    <input type = "file"/> file upload <br/>
-
-    <!-- 비밀번호를 입력하게 해주는 태그 -->
-    <input type = "password"/> type password <br/>
-
-    <!-- 동의 버튼 같은 버튼 만들어주는 태그 -->
-    <input type = "radio", name = "type"/> radio button1 <br/>
-    <input type = "radio", name = "type"/> radio button2 <br/>
-
-    <!-- 슬라이드 바 만들어주는 태그 -->
-    <input type = "range"/> side bar
-
-    <br/>
-    <br/>
-
-    <!-- 초콜릿 테이블 ( 구룹 같은 거 ), td는 표의 해, tr은 표의 열암 -->
-    <table border = "1">
-        <tr>
-            <td>section1</td>
-            <td>section2</td>
-        </tr>
-        <tr>
-            <td>section3</td>
-            <td>section4</td>
-        </tr>
-    </table>
-
-    <!-- 선택창을 만들어주는 태그 -->
-    <select name="" id="">
-        <option>choose your job</option>
-        <option>finder</option>
-        <option>magician</option>
-        <option>warrior</option>
-        <option>none</option>
-    </select>
-
-    <i>기울임</i>
-    <b>굵음</b>
-    <u>밑줄</u>
-    <s>취소선</s>
-    <small>삭제</small>
-
-    <!-- 주석 >> 하는 방법은 ctrl / or cmd / -->
-
-    <!-- 루비 태그 -->
-    <ruby>
-        안녕<rp>(</rp><rt>hello</rt><rp>)</rp>
-    </ruby>
-
-    <br/>
-
-    <button>hello!</button>
 </body>
 
 </html>

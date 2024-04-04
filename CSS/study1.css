@@ -1,11 +1,8 @@
 @charset "UTF-8";
 
-/* basic line */
-/* name {
-    proporty: insert;
-    proporty: insert;
-    proporty: insert;
-} */
+img {
+    height: 500px;
+}
 
 .button {
     width: 100px;
