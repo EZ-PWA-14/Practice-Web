@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: 1px solid darkblue;
@@ -11,9 +10,23 @@
 
 :root {
   font-family: "Gothic A1", sans-serif;
+  margin: 0 auto;
+}
+
+.header {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .inner {
   width: 1200px;
   display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.inner > section {
+  text-align: left;
 }

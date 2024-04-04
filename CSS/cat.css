@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#cat {
+  width: 200px;
+  height: auto;
+  margin: 20px auto;
+}
+
+p {
+  font-size: 20px;
+  color: #333;
+}
