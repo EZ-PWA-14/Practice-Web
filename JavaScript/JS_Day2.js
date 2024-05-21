@@ -80,8 +80,27 @@ let fruits = [
   `mango`,
   `banana`
 ];
+console.log(fruits[1]);
 
+//배열과 객체 중첩하기
+let student = {
+  name: "도레미",
+  scoure: {
+    history: 85,
+    science: 94
+  },
+  friends: [
+    "kim",
+    "lee",
+    "park"
+  ]
+};
 
-//
-let st = `i'm a boy`;
-document.write(st);
+// 과학 점수가 알고 싶을때는
+console.log(student.scoure.science);
+
+// 친구 이씨를 부르고 싶을때는
+console.log(student.friends[1]);
+
+// 두개를 같이 부르고 싶을때는
+console.log(student.scoure.science, student.friends[1]);
